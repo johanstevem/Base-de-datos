@@ -1,0 +1,27 @@
+/*==============================================================*/
+/* Creacion de la tabla datos                                     */
+/*==============================================================*/
+Create table datos (
+Id_Datos int PRIMARY KEY,
+Nombre_Presidente varchar (100) not null,
+Cantidad_Votos int
+);
+
+/*==============================================================*/
+/* insertar datos en la tabla datos                                     */
+/*==============================================================*/
+
+
+Insert into datos (Id_Datos, Nombre_Presidente, Cantidad_Votos) values 
+(1,'Rafael', 100),
+(2,'Luisa', 40),
+(3,'Maoto', 55),
+(4,'Mario Bros', 70),
+(5,'Luis', 60),
+(6,'Dana', 110),
+(7,'Vicente', 90);
+
+/*==============================================================*/
+/* consulta para poder ver el nombre y cantidad de votos en la tabla datos                                   */
+/*==============================================================*/
+SELECT Nombre_Presidente, Cantidad_Votos FROM datos;
