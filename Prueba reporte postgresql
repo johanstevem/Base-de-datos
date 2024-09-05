@@ -24,4 +24,30 @@ Insert into datos (Id_Datos, Nombre_Presidente, Cantidad_Votos) values
 /*==============================================================*/
 /* consulta para poder ver el nombre y cantidad de votos en la tabla datos                                   */
 /*==============================================================*/
+
+
 SELECT Nombre_Presidente, Cantidad_Votos FROM datos;
+
+
+/*==============================================================*/
+/* Codigo para Oracle (sqldeveloper)                            */
+/*==============================================================*/
+
+
+CREATE TABLE datos (
+    Id_Datos NUMBER PRIMARY KEY,
+    Nombre_Presidente VARCHAR2(100) NOT NULL,
+    Cantidad_Votos NUMBER
+);
+
+/*==============================================================*/
+/* insercion en la tabla datos (sqldeveloper)                   */
+/*==============================================================*/
+
+INSERT INTO datos (Id_Datos, Nombre_Presidente, Cantidad_Votos) VALUES (1, 'Rafael', 100);
+INSERT INTO datos (Id_Datos, Nombre_Presidente, Cantidad_Votos) VALUES (2, 'Luisa', 40);
+INSERT INTO datos (Id_Datos, Nombre_Presidente, Cantidad_Votos) VALUES (3, 'Maoto', 55);
+INSERT INTO datos (Id_Datos, Nombre_Presidente, Cantidad_Votos) VALUES (4, 'Mario Bros', 70);
+INSERT INTO datos (Id_Datos, Nombre_Presidente, Cantidad_Votos) VALUES (5, 'Luis', 60);
+INSERT INTO datos (Id_Datos, Nombre_Presidente, Cantidad_Votos) VALUES (6, 'Dana', 110);
+INSERT INTO datos (Id_Datos, Nombre_Presidente, Cantidad_Votos) VALUES (7, 'Vicente', 90);
