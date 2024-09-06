@@ -51,3 +51,14 @@ INSERT INTO datos (Id_Datos, Nombre_Presidente, Cantidad_Votos) VALUES (4, 'Mari
 INSERT INTO datos (Id_Datos, Nombre_Presidente, Cantidad_Votos) VALUES (5, 'Luis', 60);
 INSERT INTO datos (Id_Datos, Nombre_Presidente, Cantidad_Votos) VALUES (6, 'Dana', 110);
 INSERT INTO datos (Id_Datos, Nombre_Presidente, Cantidad_Votos) VALUES (7, 'Vicente', 90);
+
+/*==============================================================*/
+/* Codigo para Sql server                  */
+/*==============================================================*/
+
+SELECT name, type_desc
+FROM sys.server_principals
+WHERE type = 'S';
+ALTER LOGIN sa WITH PASSWORD = 'sqlserver193';
+EXEC xp_instance_regread 'HKEY_LOCAL_MACHINE', 'Software\Microsoft\MSSQLServer\MSSQLServer', 'LoginMode';
+ALTER LOGIN sa ENABLE;
