@@ -1,0 +1,9 @@
+SELECT 
+    Nombre_Presidente AS Series,
+    Cantidad_Votos AS Value,
+    Nombre_Presidente AS Label,
+    ROW_NUMBER() OVER (ORDER BY Cantidad_Votos DESC) AS Category
+FROM 
+    datos
+ORDER BY 
+    Cantidad_Votos DESC;
